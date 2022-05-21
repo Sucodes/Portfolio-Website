@@ -1,0 +1,31 @@
+/******************* Contact section styling begins here ***************/
+#contact-me {
+    height: 100vh;
+    text-align: center;
+    @include flexCenter(column);
+
+    p {
+        font-size: 25px;
+
+    }
+
+    form {
+        border: 1px solid #a9776e;
+        width: max-content;
+        margin-bottom: 5px;
+
+        input {
+            width:100%;
+            padding: 10px;
+            border-radius: 4px;
+            width: 300px;
+        }
+
+        textarea {
+            width: 300px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    }
+}
+/* Contact section styling ends here */

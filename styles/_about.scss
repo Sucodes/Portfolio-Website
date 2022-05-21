@@ -1,0 +1,30 @@
+/************** About section begins here ****************/
+#about {
+    @extend %base;
+    @include flexCenter(row);
+
+    .left {
+        width: 50%;
+
+        img {
+            border: 1px solid white;
+            border-radius: 10%;
+            height: 300px;
+            box-shadow: 10px 10px 5px #7a6560;
+            float: right;
+            margin: auto;
+        }
+    }
+
+    .right {
+        width: 50%;
+        margin: 50px;
+
+        p {
+            border: 1px solid #a9776e;
+            width: 300px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+    }
+}
