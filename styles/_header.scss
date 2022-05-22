@@ -1,6 +1,7 @@
 /***************** Navigation styling starts here *******/
 #navbar {
-    top: 0;
+    top: 10px;
+    right: 35px;
     @include flexCenter(row);
     justify-content: flex-end;
     width: 100%;
