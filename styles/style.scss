@@ -178,7 +178,7 @@ button {
     #navbar {
         @include flexCenter(row);
         justify-content: space-between;
-        align-items: center;
+        width: 90%;
         
         #nav-link {
             padding: 10px;
