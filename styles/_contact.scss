@@ -1,29 +1,80 @@
 /******************* Contact section styling begins here ***************/
 #contact-me {
     height: 100vh;
-    text-align: center;
-    @include flexCenter(column);
+    display: grid;
+    grid-template-columns: auto auto;
+    place-items: center;
 
-    form {
-        border: 1px solid #a9776e;
-        width: max-content;
-        margin-bottom: 5px;
+    .col1 {
+        width: 300px;
+        font-size: 20px;
+        
+        p {
+            text-align: left;
+            font-size: 20px;
 
-        input {
-            border: none;
-            outline: none;
-            width:100%;
-            padding: 10px;
-            border-radius: 4px;
-            width: 300px;
+            img {
+                width: 30px;
+            }
+
+            mark {
+                background-color: rgb(212, 172, 172);
+            }
         }
 
-        textarea {
-            border: none;
-            outline: none;
-            width: 300px;
-            padding: 10px;
-            border-radius: 4px;
+        .links {
+        
+            img {
+                border-radius: 50%;
+                width: 50px;
+                
+                &:hover {
+                    transform: scale(1.5);
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+
+
+    .col2 {
+        font-size: 20px;
+
+        form {
+            border: 1px solid #a9776e;
+            width: max-content;
+            margin-bottom: 5px;
+                
+            input {
+                border: none;
+                background-color: #a9776e;
+                border-bottom: solid black;
+                outline: none;
+                width: 100%;
+                padding: 10px;
+                border-radius: 4px;
+                width: 300px;
+
+                &::placeholder {
+                    font-family: "playfair display";
+                    color: rgb(212, 172, 172);
+                }
+            }
+
+            textarea {
+                border: none;
+                border-bottom: solid black;
+                background-color: #a9776e;
+                outline: none;
+                width: 300px;
+                padding: 10px;
+                border-radius: 4px;
+
+                &::placeholder {
+                    font-family: "playfair display";
+                    color: rgb(212, 172, 172);
+                }
+            }
         }
     }
 }

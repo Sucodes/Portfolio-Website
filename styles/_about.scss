@@ -5,14 +5,14 @@
 
     .left {
         width: 50%;
+        @include flexCenter(row);
+        justify-content: flex-end;
 
         img {
             border: 1px solid white;
             border-radius: 10%;
             height: 300px;
             box-shadow: 10px 10px 5px #7a6560;
-            float: right;
-            margin: auto;
             object-fit: cover;
         }
     }

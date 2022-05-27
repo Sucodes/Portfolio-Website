@@ -28,85 +28,287 @@ button {
     padding: 10px;
     text-align: center;
     transition: 0.5s;
+    background-color: rgb(212, 172, 172);
 
     &:hover {
-        background-color: rgb(240, 205, 205);
+        color: #a9776e;
+        background-color: #69353F;
         transform: scale(1.3);
     }
 }
 /* Button styling ends here */
 
 
-/*************** Footer styling begins here **************/
-#profile-link {
-    width: 100%;
-    @include flexCenter(row);
-
-    .footer-link {
-        text-decoration: none;
-        text-align: center;
-        padding: 10px;
-        color: white;
-    }
-}
-/* Footer styling ends here */
-
-
 /******************* Media Queries begins here *********************/
 @media (max-width: 800px) {
+    #navbar {
+        @include flexCenter(row);
+        justify-content: space-between;
+        width: 90%;
+    }
+
     #projects {
         @include flexCenter(column);
         flex-wrap: wrap;
     }
+
+    #contact-me {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
+        .col1 {
+            align-self: center;
+            justify-self: center;
+        }
+
+        .col2 {
+            align-self: center;
+            justify-self: center;
+
+            button {
+                margin-bottom: 20px;
+            }
+        }
+    }
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+    #navbar {
+        @include flexCenter(row);
+        justify-content: space-evenly;
+        width: 90%;
+    }
+
     #welcome-section {
         font-size: 20px;
-        height: 100vh;
+        text-align: center;
     }
 
     #about {
-        height: 100vh;
         @include flexCenter(column);
 
-        .left img {
-            height: 50vh;
-            width: 100%;
-        }
+        .left {
+            justify-content: center;
+
+            img {
+                border-radius: 50%;
+                height: 80%;
+                width: 100%;
+            }
+        }   
 
         .right {
-            padding: 0;
             margin: 0;
+            width: auto;
             height: 50vh;
-            width: 300px;
-            font-size: small;
+            font-size: 18px;
             text-align: center;
         }
     }
 
-    #projects {
-        height: auto;
-        @include flexCenter(column);
-        flex-wrap: wrap;
-        margin: 0;
+    .card {
+        height: 100vh;
+        grid-row-gap: 5px;
+        grid-column-gap: 5px;
+
+        .project1-card {
+            align-self: center;
+            width: 200px;
+
+            #top_layer {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .project2-card {
+            align-self: flex-end;
+            width: 200px;
+
+            #top_layer {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    height: 96px;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        .project3-card {
+            align-self: flex-start;
+            width: 200px;
+
+            #top_layer {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }  
+        }
+
+        .project4-card {
+            align-self: center;
+            width: 200px;
+
+            #top_layer {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        } 
     }
 }
 
 
-@media  (max-width: 450px) {
-    #welcome-section {
-        font-size: 15px;
-        text-align: center;
-        height: 100vh;
+@media  (max-width: 500px) {
+    #navbar {
+        @include flexCenter(row);
+        justify-content: space-between;
+        width: 90%;
+        
+        #nav-link {
+            padding: 10px;
+        }
     }
 
-    #projects {
-        height: auto;
-        margin: auto;
+    #welcome-section {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #about {
         @include flexCenter(column);
-        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        height: 100vh;
+
+        .left {
+
+            img {
+                border-radius: 50%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .right {
+            line-height: 0;
+            
+            h3 {
+                margin-top: 0;
+            }
+
+            p {
+                margin: 0;
+                padding-bottom: 10px;
+            }
+        }
+    }
+
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        
+        .project1-card {
+            width: 50%;
+            padding: 5px;
+            justify-self: flex-start;
+            align-self: flex-end;
+
+            h4 {
+                margin: 0;
+                margin-bottom: 5px;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .project2-card {
+            width: 50%;
+            padding: 5px;
+            justify-self: flex-end;
+            align-self: center;
+
+            h4 {
+                margin: 0;
+                margin-bottom: 5px;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .project3-card {
+            width: 50%;
+            padding: 5px;
+            justify-self: flex-start;
+            align-self: center;
+
+            h4 {
+                margin: 0;
+                margin-bottom: 5px;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .project4-card {
+            width: 50%;
+            padding: 5px;
+            justify-self: flex-end;
+            align-self: flex-start;
+
+            h4 {
+                margin: 0;
+                margin-bottom: 5px;
+            }
+
+            p {
+                margin: 0;
+            }
+        } 
+    }
+
+    #contact-me {
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        
+        .col1 {
+            align-self: center;
+            justify-self: center;
+        }
+
+        .col2 {
+            align-self: center;
+            justify-self: center;
+
+            button {
+                margin-bottom: 20px;
+            }
+        }
     }
 }
 /* Media queries end here */
