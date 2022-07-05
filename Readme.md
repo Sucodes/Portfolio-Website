@@ -2,7 +2,7 @@
 
 ---
 
-![Portfolio banner](../Personal%20Portfolio%20Website/images/Portfolio_Website.png)
+![Portfolio banner](./images/Portfolio_Website.png)
 
 ## Basic Overview
 
