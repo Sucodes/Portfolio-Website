@@ -90,6 +90,8 @@
 /************** About section ends here ****************/
 /***************** Projects styling begins here ************/
 .card {
+  margin: 50px 0px;
+  height: 1000px;
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -175,6 +177,7 @@
   display: grid;
   grid-template-columns: auto auto;
   place-items: center;
+  margin: 50px 0px;
 }
 #contact-me .col1 {
   width: 300px;
@@ -302,7 +305,6 @@ button:hover {
   }
 
   #contact-me {
-    height: 100vh;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
@@ -315,9 +317,6 @@ button:hover {
   #contact-me .col2 {
     align-self: center;
     justify-self: center;
-  }
-  #contact-me .col2 button {
-    margin-bottom: 20px;
   }
 }
 @media (max-width: 700px) {
@@ -358,7 +357,6 @@ button:hover {
   }
 
   .card {
-    height: 100vh;
     grid-row-gap: 5px;
     grid-column-gap: 5px;
   }
@@ -521,7 +519,6 @@ button:hover {
   }
 
   #contact-me {
-    height: 100vh;
     width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
@@ -534,9 +531,6 @@ button:hover {
   #contact-me .col2 {
     align-self: center;
     justify-self: center;
-  }
-  #contact-me .col2 button {
-    margin-bottom: 20px;
   }
 }
 /* Media queries end here *//*# sourceMappingURL=style.css.map */
