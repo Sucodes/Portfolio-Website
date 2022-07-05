@@ -1,22 +1,14 @@
 # Portfolio Website
 
----
-
 ![Portfolio banner](./images/Portfolio_Website.png)
 
 ## Basic Overview
-
----
 
 This project is my first self-coded Responsive Portfolio [Website](Suvwe’s Personal Portfolio (sucodes.github.io)) which was built using
 - HTML
 - SASS 
 
----
-
 ## Features 
-
----
 
 1. Multi-page layout.
 2. Fully responsive and compatible with all mobile devices.
