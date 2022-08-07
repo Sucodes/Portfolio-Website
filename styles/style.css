@@ -5,6 +5,8 @@
   padding: 0;
 }
 
+/************** Button styling starts here **********************/
+/* Button styling ends here */
 /***************** Navigation styling starts here *******/
 #navbar {
   top: 10px;
@@ -51,6 +53,21 @@
   font-weight: 600;
   transition: 2s;
 }
+#welcome-section button {
+  background-color: #a9776e;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+  background-color: rgb(212, 172, 172);
+}
+#welcome-section button:hover {
+  color: #a9776e;
+  background-color: #69353F;
+  transform: scale(1.3);
+}
 
 /* Welcome section ends here */
 /************** About section begins here ****************/
@@ -85,6 +102,21 @@
   width: 300px;
   line-height: 1.5;
   text-align: justify;
+}
+#about .right button {
+  background-color: #a9776e;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+  background-color: rgb(212, 172, 172);
+}
+#about .right button:hover {
+  color: #a9776e;
+  background-color: #69353F;
+  transform: scale(1.3);
 }
 
 /************** About section ends here ****************/
@@ -188,17 +220,19 @@
   font-size: 20px;
 }
 #contact-me .col1 p img {
-  width: 30px;
+  width: 1.2rem;
+  margin-right: 10px;
 }
 #contact-me .col1 p mark {
   background-color: rgb(212, 172, 172);
 }
 #contact-me .col1 .links img {
   border-radius: 50%;
-  width: 50px;
+  width: 1.5rem;
+  margin-right: 15px;
 }
 #contact-me .col1 .links img:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
   transition: 0.3s;
 }
 #contact-me .col2 {
@@ -210,6 +244,9 @@
   width: -moz-max-content;
   width: max-content;
   margin-bottom: 5px;
+}
+#contact-me .col2 form label {
+  font-size: 1rem;
 }
 #contact-me .col2 form input {
   border: none;
@@ -254,6 +291,22 @@
   font-family: "playfair display";
   color: rgb(212, 172, 172);
 }
+#contact-me .col2 form .submit {
+  background-color: #a9776e;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  transition: 0.5s;
+  background-color: rgb(212, 172, 172);
+  width: 4rem;
+}
+#contact-me .col2 form .submit:hover {
+  color: #a9776e;
+  background-color: #69353F;
+  transform: scale(1.3);
+}
 
 /* Contact section styling ends here */
 body {
@@ -267,24 +320,6 @@ body {
   font-size: 16px;
 }
 
-/************** Button styling starts here **********************/
-button {
-  background-color: #a9776e;
-  border: none;
-  cursor: pointer;
-  border-radius: 4px;
-  padding: 10px;
-  text-align: center;
-  transition: 0.5s;
-  background-color: rgb(212, 172, 172);
-}
-button:hover {
-  color: #a9776e;
-  background-color: #69353F;
-  transform: scale(1.3);
-}
-
-/* Button styling ends here */
 /******************* Media Queries begins here *********************/
 @media (max-width: 800px) {
   #navbar {
@@ -295,7 +330,6 @@ button:hover {
     justify-content: space-between;
     width: 90%;
   }
-
   #projects {
     display: flex;
     flex-direction: column;
@@ -303,7 +337,6 @@ button:hover {
     align-items: center;
     flex-wrap: wrap;
   }
-
   #contact-me {
     width: 100vw;
     display: grid;
@@ -328,12 +361,10 @@ button:hover {
     justify-content: space-evenly;
     width: 90%;
   }
-
   #welcome-section {
     font-size: 20px;
     text-align: center;
   }
-
   #about {
     display: flex;
     flex-direction: column;
@@ -355,7 +386,6 @@ button:hover {
     font-size: 18px;
     text-align: center;
   }
-
   .card {
     grid-row-gap: 5px;
     grid-column-gap: 5px;
@@ -421,12 +451,10 @@ button:hover {
   #navbar #nav-link {
     padding: 10px;
   }
-
   #welcome-section {
     font-size: 16px;
     text-align: center;
   }
-
   #about {
     display: flex;
     flex-direction: column;
@@ -452,7 +480,6 @@ button:hover {
     margin: 0;
     padding-bottom: 10px;
   }
-
   .card {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
@@ -517,7 +544,6 @@ button:hover {
   .card .project4-card p {
     margin: 0;
   }
-
   #contact-me {
     width: 100vw;
     display: grid;

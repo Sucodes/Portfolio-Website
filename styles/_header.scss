@@ -42,5 +42,9 @@
             transition: 2s;
         }
     }
+
+    button {
+        @include button;
+    }
 }
 /* Welcome section ends here */
